@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🕐World Clock</title>
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
 </head>
 
 <body>
+
   <div class="container">
-    <h1>🕐World Clock</h1>
+    <h1>World Clock</h1>
     <select name="cities" id="cities">
       <option value="select">Select a city...</option>
       <option value="select">Ciudad de México</option>
@@ -19,14 +24,20 @@
       <option value="select">Lima</option>
       <option value="select">New York</option>
     </select>
-  </div>
-  <div class="city hidden">
-    <div class="one">
-      <h2>Ciudad de México</h2>
-      <div id="date">22 June 2025</div>
-      <div id="time">15:42</div>
+    <div class="city">
+      <div>
+        <h2>Los Angeles 🇺🇸</h2>
+        <div class="date">August 15th 2022</div>
+      </div>
+      <div class="time">1:48:15 <small>AM</small></div>
     </div>
-
+    <div class="city">
+      <div>
+        <h2>Sydney 🇦🇺</h2>
+        <div class="date">August 15th 2022</div>
+      </div>
+      <div class="time">1:48:15 <small>AM</small></div>
+    </div>
   </div>
   <footer>
     <p>
@@ -36,6 +47,7 @@
       <a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a>
     </p>
   </footer>
+  <script src="src/index.js"></script>
 </body>
 
 </html>
