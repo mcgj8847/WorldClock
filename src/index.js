@@ -39,7 +39,7 @@ function updateCity(event) {
           "HH:mm:ss"
         )} <small>${cityhour.format("A")} </small></div>
       </div>
-      <a href="/">All cities</>
+      <a href="/"><small>All cities</small></>
 `;
 }
 setInterval(timeNow, 1000);
